@@ -1,3 +1,4 @@
+
 def somma_lista (lista):
    return sum(lista)
 
