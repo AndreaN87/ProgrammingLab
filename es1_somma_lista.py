@@ -1,4 +1,4 @@
-#Scrivete una funzione che sommi tutti gli elementi di una lista
+#Scrivete una funzione che sommi tutti gli elementi di una lista (Esercizo 1)
 
 #Definisco una funzione
 def somma_lista(lista):
