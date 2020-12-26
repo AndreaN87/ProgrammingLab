@@ -4,21 +4,19 @@
 element_list = []
 float_list = []
 
-#Apro il file
+#Apro il file in lettura
 file = open('shampoo_sales.csv', 'r')
 
-#Per ogni riga del file splitto sulla virgola
+#Creo una nuova lista con tutti gli elementi del file separati dalla virgola
 for line in file:
-    element = line.split(',')
-    #Inserisco ogni elemnteo del file nella lista vuota
-    for item in element:
-        element_list.extend(element)
-    # Se l'elemento è convertibile in float lo aggiungo ad una lista
+     element_list.extend(line.split(','))
+#Se l'elemento è convertibile in float lo aggiungo ad una lista
+for item in element_list:
     try:
         float_list.append(float(item))
     except ValueError:
         pass
-# Sommo i valori delle vendite
+#Sommo i valori delle vendite
 total_sales = sum (float_list)
 #Stampo il totale delle vendite arrotondado le cifre decimali
 print(f'Il totale delle vendite ammonta a:{round(total_sales,2)}')
