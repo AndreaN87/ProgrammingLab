@@ -32,8 +32,6 @@ class CSVFile():
                 pass
         return values_list
 
-
-
 myfile = CSVFile('shampoo_sales.csv')
 print(myfile.name)
 print(myfile.get_data())
